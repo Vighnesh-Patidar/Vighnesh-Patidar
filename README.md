@@ -23,8 +23,8 @@ Distributed pose reconstruction across a self-organizing phone network. Any phon
 **[The-Notorious-E.S.P](https://github.com/Vighnesh-Patidar/The-Notorious-E.S.P)**
 A bare-metal Wi-Fi packet sniffer for the ESP8266, built entirely from scratch — static slab allocator, lock-free ring buffer, hand-rolled 802.11/IPv4/TCP/UDP parser, and a bitmask-based filter engine. Validated on hardware.
 
-**[run-V.M.C.](https://github.com/Vighnesh-Patidar/run-V.M.C.)**
-A RISC-V RV32I virtual machine in C++ — custom memory map, memory-mapped UART, hand-rolled instruction decoder, no emulation libraries.
+**[Network-Tester](https://github.com/Vighnesh-Patidar/Network-Tester)**
+A GitOps-driven network test harness — author topologies visually, validate OSPF/BGP convergence under injected failures via Mininet + FRRouting, with dual-plane (data + control) reconvergence measurement checked against an independently computed reference, gated in CI.
 
 **[CS315_Redis_From_Scratch](https://github.com/Vighnesh-Patidar/CS315_Redis_From_Scratch)**
 A from-scratch C++ implementation of Redis, built as a group project for CS315 at IIT Kanpur.
