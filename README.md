@@ -48,46 +48,9 @@ A from-scratch C++ implementation of Redis, built as a group project for CS315 a
 
 <img src="https://streak-stats.demolab.com/?user=Vighnesh-Patidar&theme=tokyonight&hide_border=true" width="65%" />
 
+<img src="./metrics.lines.svg" width="65%" alt="Lines of code" />
+
 </div>
-
-> The language card above is fed live by GitHub's own byte-count-per-language API, scoped to your non-fork repos — no setup needed, it just works the moment this is your profile README.
-
-### Lines of code
-
-GitHub doesn't expose total lines authored through its API — every "lines of code" badge that actually works pulls it from a one-time GitHub Action setup (it clones your repos and diffs them), not a live query param. Worth doing properly rather than faking it:
-
-1. Generate a **classic PAT** with `repo` scope → Settings → Developer settings → Personal access tokens.
-2. In your `Vighnesh-Patidar/Vighnesh-Patidar` repo, add it as a secret named `METRICS_TOKEN`.
-3. Add `.github/workflows/metrics.yml`:
-
-```yaml
-name: Lines of code metrics
-on:
-  schedule:
-    - cron: '0 0 * * 0'   # weekly refresh
-  workflow_dispatch:
-
-jobs:
-  lines-of-code:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: lowlighter/metrics@latest
-        with:
-          filename: metrics.lines.svg
-          token: ${{ secrets.METRICS_TOKEN }}
-          base: ""
-          plugin_lines: yes
-          plugin_lines_repositories_limit: 20
-          plugin_lines_history_limit: 50
-```
-
-4. Run it once from the Actions tab, then reference the committed SVG in this README:
-
-```markdown
-![Lines of code](./metrics.lines.svg)
-```
-
-It commits `metrics.lines.svg` straight into the repo and refreshes weekly — accurate, not a guess.
 
 ---
 
