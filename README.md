@@ -35,7 +35,7 @@ A from-scratch C++ implementation of Redis, built as a group project for CS315 a
 
 - Contributing to **Zephyr RTOS** (syscall stack usage reporting)
 - Writing a [Medium series](https://medium.com/@wishu.pradeep) walking through how computers and processors actually work, from binary arithmetic up
-- Planning a Bhopal → Bangalore break-in run on a Royal Enfield Super Meteor 650
+- Planning a Bhopal → Bangalore break-in run on a Royal Enfield Super Meteor 650, which I have not bought yet (no end to a man's dreams).
 
 ---
 
